@@ -8,6 +8,11 @@ body {
     padding: 0px;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
+
 header {
     justify-content: space-between;
     width: 94%;
@@ -18,7 +23,12 @@ header {
     top: 30px;
     z-index: 1;
     left: 30px;
-    padding: 0px 25px;
+    padding: 10px 25px !important;
+}
+
+header h2 {
+    padding: 0px;
+    margin: 0px;
 }
 
 .menu-header {
@@ -126,6 +136,11 @@ header {
     font-weight: 700;
 }
 
+.button-get-profile:hover {
+    background-color: #00a070;
+    transition: 0.8s;
+}
+
 .line-get-profile {
     position: absolute;
     top: 30px;
@@ -169,6 +184,7 @@ header {
     bottom: 45px;
     left: 45px;
     font-size: 47px;
+    font-weight: 800;
     position: absolute;
     min-inline-size: max-content;
 }
@@ -270,6 +286,8 @@ header {
 
 #projects .projects-header h1 {
     margin-bottom: 50px;
+    font-size: 47px;
+    font-weight: 700;
 }
 
 #projects .all-projects {
@@ -401,6 +419,7 @@ header {
     font-size: 47px;
     text-align: center;
     margin-top: 100px;
+    font-weight: 700;
 }
 
 .image-name-depoiment img {
@@ -424,6 +443,7 @@ header {
     background-color: #fff;
     border-radius: 15px;
     min-width: 319px;
+    gap: 20px;
 }
 
 .section-depoiments::-webkit-scrollbar {
@@ -457,4 +477,60 @@ header {
 
 .description-depoiment {
     font-size: 14px;
+}
+
+/* End Section Depoiment */
+
+/* Section Mensage Whatsapp */
+
+.container-whatsapp {
+    background-color: #080c0c;
+    padding: 50px;
+    text-align: center;
+    color: #fff;
+    margin-bottom: 100px;
+}
+
+.container-whatsapp a {
+    border-bottom: #00a070 dashed 4px;
+    text-decoration: none;
+    color: #fff;
+}
+
+/* End Section Mensage Whatsapp */
+
+/* Section Carrousel  */
+
+.carousel {
+    min-height: 500px !important;
+    max-height: 500px !important;
+}
+
+.carousel-item {
+    padding: 60px;
+    margin-top: 65px;
+}
+
+.title-carousel {
+    font-size: 47px;
+    text-align: center;
+    color: black;
+    font-weight: 700;
+}
+
+.title-carousel span {
+    color: #00a070;
+}
+
+@media only screen and (max-width: 880px) {
+
+    .carousel {
+        min-height: 700px !important;
+        max-height: 700px !important;
+    }
+
+    .carousel-item {
+        margin-top: 30px;
+    }
+
 }
